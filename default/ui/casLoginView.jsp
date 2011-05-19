@@ -12,8 +12,7 @@
 						</c:if>
 						
 						<c:if test="${empty sessionScope.openIdLocalId}">
-						<spring:message code="screen.welcome.label.netid.accesskey" var="userNameAccessKey" />
-						<form:input cssClass="required" cssErrorClass="error" id="username" size="25" tabindex="1" accesskey="${userNameAccessKey}" path="username" autocomplete="false" htmlEscape="true" />
+						<form:input cssClass="required" cssErrorClass="error" id="username" size="25" tabindex="1" accesskey="u" path="username" autocomplete="false" htmlEscape="true" />
 						</c:if>
                     </div>
                     <div class="row">
@@ -24,19 +23,17 @@
 						information, see the following web page:
 						http://www.geocities.com/technofundo/tech/web/ie_autocomplete.html
 						--%>
-						<spring:message code="screen.welcome.label.password.accesskey" var="passwordAccessKey" />
-						<form:password cssClass="required" cssErrorClass="error" id="password" size="25" tabindex="2" path="password"  accesskey="${passwordAccessKey}" htmlEscape="true" autocomplete="off" />
+						<form:password cssClass="required" cssErrorClass="error" id="password" size="25" tabindex="2" path="password"  accesskey="p" htmlEscape="true" autocomplete="off" />
                     </div>
                     <div class="row check">
-                        <input id="warn" name="warn" value="true" tabindex="3" accesskey="<spring:message code="screen.welcome.label.warn.accesskey" />" type="checkbox" />
-                        <label for="warn"><spring:message code="screen.welcome.label.warn" /></label>
+                        <input id="warn" name="warn" value="true" tabindex="3" accesskey="w" type="checkbox" />
+                        <label for="warn"><span class="accesskey">W</span>arn me before logging me into other sites.</label>
                     </div>
                     <div class="row btn-row">
 						<input type="hidden" name="lt" value="${flowExecutionKey}" />
 						<input type="hidden" name="_eventId" value="submit" />
 
                         <input class="btn-submit" name="submit" accesskey="l" value="Login" tabindex="4" type="submit" />
-			<a href="http://onid.oregonstate.edu/chpw.shtml">Help, I forgot my password</a>
                     </div>
                 </div>
                
