@@ -20,6 +20,10 @@
 		        <a href="http://oregonstate.edu/helpdocs/helpdesk">Contact us with  your<br />
 		        comments and questions</a><br />
 		        (1 541 737 3474)</p>
+			<p><a href="http://oregonstate.edu/copyright">Copyright</a>&nbsp;&copy;&nbsp;2011<br />
+			Oregon state University<br />
+			<a href="http://oregonstate.edu/disclaimer">Disclaimer</a>
+			</p>
 		    </div>
 		
 	        </div>

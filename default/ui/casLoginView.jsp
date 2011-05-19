@@ -37,7 +37,9 @@
                     </div>
                 </div>
                
+		<h2>Helpful Links</h2>
 		<ul id="help-links">
+		    <li><a href="http://onid.oregonstate.edu/chpw.shtml">Help, I forgot my password</a></li>
 		    <li><a href="http://oregonstate.edu/helpdocs/onid/signup">Create or activate ONID account</a></li>
 		    <li><a href="http://oregonstate.edu/helpdocs/onid">Need help logging in</a></li>
 		</ul>
