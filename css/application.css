@@ -41,7 +41,7 @@ a {
   color: #D85A1A; }
 
 p a {
-  border-bottom: 1px dotted #D85A1A;
+  border-bottom: 1px solid #D85A1A;
   text-decoration: none; }
 
 p a:hover {
@@ -58,6 +58,12 @@ em {
 
 strong {
   font-weight: bold; }
+
+#content ul li {
+  list-style: none; }
+
+#content ul li:before {
+  content: "\00BB \0020"; }
 
 /* Basic ids */
 #bd, #hd {
@@ -92,7 +98,7 @@ strong {
 
 #ft-wrap {
   border-top: 3px solid #d85a1a;
-  background: url(../images/footer_gradient.png) bottom left repeat-x #252525;
+  background: url(../images/footer_gradient.png) top left repeat-x #252525;
   margin-bottom: 2em;
   min-height: 148px; }
 
@@ -113,7 +119,7 @@ div#right-sidebar {
 
 div#right-sidebar .side-nav {
   background: white;
-  margin-bottom: 0.8em;
+  margin-bottom: 1.2em;
   padding: 0.3em;
   text-align: center; }
 div#right-sidebar .notices ul {
@@ -125,10 +131,11 @@ div#right-sidebar .notices ul {
   padding: .3em 1.2em .7em 1.2em; }
 
 div#left-content {
+  float: left;
   width: 724px; }
 
 div#left-content #content {
-  min-height: 28em; }
+  min-height: 31em; }
 
 #app_title {
   font-family: "EksjaExtremesRegular",Arial,Helvetica,Verdana,sans-serif;
@@ -140,11 +147,12 @@ div#login label {
   font-size: 0.94em;
   width: 10em; }
 
-div#login h2 {
-  font-size: 1.1em; }
+div#content h2 {
+  font-size: 1.1em;
+  margin-top:0.75em; }
 
 ul#help-links {
-  margin-top:1.2em; }
+  margin-top:0.5em; }
 
 div.clear-both {
   clear: both; }
@@ -335,21 +343,14 @@ input:focus, textarea:focus {
   -webkit-box-shadow: 0 0 15px #615042;
   -moz-box-shadow: 0 0 15px #615042;
   box-shadow: 0 0 15px #615042;
-  background-color: #d3elf0;
+  background-color: #D3E1F0;
   -webkit-transform: scale(1.03);
   -moz-transform: scale(1.03);
   transform: scale(1.03); }
 
 input[type="submit"], input[type="button"].submit, input[type="reset"] {
-/*
-  background: #f0f0f0;
-  color: #000;
-  margin-right: 2em;
-  border: auto;
-  cursor: pointer;
-  float: inherit;
-*/
-}
+  margin-bottom: 10px;
+  margin-top:5px; }
 
 .checkbox-label, .radio-label {
   display: inline; }
