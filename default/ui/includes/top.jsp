@@ -21,7 +21,7 @@
 	    <link rel="icon" href="<%= request.getContextPath() %>/favicon.ico" type="image/x-icon" />
 	</head>
 
-	<body id="cas" onload="init();">
+	<body id="cas">
             <div id="hd-wrap">
               <div id="hd"> 
                 <div class="yui3-g">

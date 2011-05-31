@@ -3,6 +3,7 @@
 			<div id="right-sidebar" class="yui3-u">
 			    <div class="side-nav">
 			    <a href="http://oregonstate.edu/registrar/transcripts"><img src="images/transcript.jpg" alt="Need a Transcript" /></a>
+			    Former student? Need a transcript?
 			    </div>
 			    <jsp:directive.include file="notice_feeds.html" />
 			</div>
