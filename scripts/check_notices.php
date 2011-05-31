@@ -49,7 +49,8 @@ foreach ($feeds_to_check as $title => $feed) {
     $output .=  '<h2>' . $feed['display_title'] . '</h2>';
     $output .=  '<div class="notices-body">';
     $output .=    '<a href="' . $feed['url'] . '">' ;
-    $output .=      '<img src="' . $image_path . '/rss_icon.png" class="notices-rss-icon">';
+    $output .=      '<img src="' . $image_path . '/rss_icon.png" class="notices-rss-icon" alt="';
+    $output .=          $feed['display_title'].' rss feed">';
     $output .=    '</a>';
     $output .=    '<ul class="notice-list">';
     $items = 0;
