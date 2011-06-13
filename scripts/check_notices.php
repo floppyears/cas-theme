@@ -119,6 +119,10 @@ function get_feed_data($feed) {
     $title = (string) $item->title;
     $title = strip_tags($title);
 
+    // strip out non-ascii characters, replace them with ""
+    $title = preg_replace('/[^(\x20-\x7F)]*/','', $title);
+    $summary = preg_replace('/[^(\x20-\x7F)]*/','', $summary);
+     
     $data[] = array (
                 'pubDate' => (string) $item->pubDate,
                 'link' => (string) $item->link,
