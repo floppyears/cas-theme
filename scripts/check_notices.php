@@ -1,10 +1,21 @@
 <?php
 /** check_feeds.php v. 0.1
  * @author Kenneth Lett
+ * @author Andy Morgan
+ *
  * Checks various feeds for new content, writes out a <ul> of items to
  * a file
  */
 
+if ( (! isset($_SERVER['argc'])) or ($_SERVER['argc'] < 2) ) {
+	print "Usage: " . $_SERVER['argv'][0] . " <output-filename>\n";
+	print "  Fetches the Alerts and Outages RSS feeds and outputs\n";
+	print "  an HTML formatted version for CAS to include.\n";
+	exit;
+}
+
+$filename = $_SERVER['argv'][1];
+$image_path = "images";
 
 // an array of feeds to check, they will be rendered in the order in which they
 // appear in this array
@@ -27,32 +38,30 @@ $feeds_to_check =
         'read_more_link' => 'http://intranet.net.oregonstate.edu/blog/archives/category/enterprise-network/outage-announcements')
   );
 
-$filename = "./notice_feeds.html"; // file to save to
-$image_path = "/cas-web/images";
 
-$output = '<div id="notices-block">';
+$output = '<div id="notices-block">' . "\n";
 
 // for each feed, fetch the data and construct a div and ul to hold it
 foreach ($feeds_to_check as $title => $feed) {
   $data = get_feed_data($feed);
-  $output .= '<div id="' . $title . '" class="notices">';
+  $output .= '<div id="' . $title . '" class="notices">' . "\n";
 
   if (!$data) {
     if ($feed['display_empty']) {
-      $output .= '<h2>' . $feed['display_title'] . '</h2>';
-      $output .= '<div class="notices-body">';
-      $output .= $feed['empty_message'];
-      $output .= '</div>';
+      $output .= '<h2>' . $feed['display_title'] . '</h2>' . "\n";
+      $output .= '<div class="notices-body">' . "\n";
+      $output .= $feed['empty_message'] . "\n";
+      $output .= '</div>' . "\n";
     }
-    $output .=  '</div>';
+    $output .=  '</div>' . "\n";
   } else {
-    $output .=  '<h2>' . $feed['display_title'] . '</h2>';
-    $output .=  '<div class="notices-body">';
+    $output .=  '<h2>' . $feed['display_title'] . '</h2>' . "\n";
+    $output .=  '<div class="notices-body">' . "\n";
     $output .=    '<a href="' . $feed['url'] . '">' ;
     $output .=      '<img src="' . $image_path . '/rss_icon.png" class="notices-rss-icon" alt="';
-    $output .=          $feed['display_title'].' rss feed">';
-    $output .=    '</a>';
-    $output .=    '<ul class="notice-list">';
+    $output .=          $feed['display_title'] . ' rss feed">';
+    $output .=    '</a>' . "\n";
+    $output .=    '<ul class="notice-list">' . "\n";
     $items = 0;
     foreach ($data as $item) {
       // exit loop when we reach our maximum number of items to show
@@ -63,18 +72,18 @@ foreach ($feeds_to_check as $title => $feed) {
       $output .=      '<a href="' . $item['link'] . '">';
       $output .=        $item['title'];
       $output .=      '</a>';
-      $output .=    '</li>';
+      $output .=    '</li>' . "\n";
     }
-    $output .=  '</ul>';
+    $output .=  '</ul>' . "\n";
     if (isset($feed['read_more_link'])) {
       $output .= '<a href="' . $feed['read_more_link'] . '" class="view-more">view more</a>';
     }
-    $output .= '</div>';
-    $output .= '</div>';
+    $output .= '</div>' . "\n";
+    $output .= '</div>' . "\n";
   }
 }
 
-$output .= '</div>';
+$output .= '</div>' . "\n";
 
 if(!save_file($output, $filename)) {
   print "Failed to save file!" . $filename;  
