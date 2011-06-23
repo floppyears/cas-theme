@@ -119,6 +119,10 @@ function get_feed_data($feed) {
     $title = (string) $item->title;
     $title = strip_tags($title);
 
+     // replace horizontal tabs with spaces
+     $title = preg_replace('/[\x09]/',' ', $title);
+     $summary = preg_replace('/[\x09]/',' ', $summary);
+
     // strip out non-ascii characters, replace them with ""
     $title = preg_replace('/[^(\x20-\x7E)]+/','', $title);
     $summary = preg_replace('/[^(\x20-\x7E)]+/','', $summary);
