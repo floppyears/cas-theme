@@ -1,0 +1,181 @@
+// Note: while some style changes for OSU are here, a lot are in their respective areas.
+// For example: variables.less will contain color changes to our #c34500 orange
+
+@font-face {
+  font-family: 'Eksja';
+  src: url(../fonts/Eksja-regular-webfont.eot);
+  src: local('☺'), url(../fonts/Eksja-regular-webfont.woff) format('woff'), url(../fonts/Eksja-regular-webfont.ttf) format('truetype'), url(../fonts/Eksja-regular-webfont.svg#webfont) format('svg');
+}
+
+body {
+  background-color: #fff;
+}
+
+.ie7,
+.ie8 {
+  margin-top: 50px;
+}
+
+h1 {
+  font-family: 'Eksja', Arial, Verdana, sans-serif;
+  color: @orange;
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+.brand,
+legend,
+h2, h3, h4, h5 {
+  font-family: 'Gudea', Arial, sans-serif;
+}
+
+#osu-footer {
+  border-top: 3px solid #ccc;
+  margin-top: 8px;
+  padding-top: 8px;
+  color: #fff;
+  #gradient > .vertical(#444, #252525);
+  a {
+    color: #fff;
+    text-decoration: underline;
+    &:hover,
+    &:active,
+    &focus {
+      text-decoration: none;
+    }
+  }
+  h3 {
+    color: #fff
+  }
+}
+
+#notices-block {
+  h2 {
+    border-bottom: 3px solid #000000;
+    font-family: "Eksja",Arial,Helvetica,Verdana,sans-serif;
+    font-size: 1.1em;
+    line-height: 0.64em;
+    margin-bottom: 5px;
+    padding-left: 3px;
+  }
+  ul {
+    margin: 0;
+    list-style-type: none;
+    padding-top: 20px;
+    li {
+      border-bottom: 1px dotted #ccc;
+      a {
+        display: block;
+      }
+    }
+  }
+  a.view-more,
+  .notices-rss-icon {
+    .pull-right;
+  }
+}
+
+/* FORM OVERWRITES */
+
+fieldset {
+  background: #f2f2f2;
+}
+
+legend {
+  background-color: #f2f2f2;
+  .border-radius-top();
+  border-color: #ddd; /* matches top border of .form-actions */
+  text-indent: 10px;
+  line-height: 48px;
+}
+
+.form-actions {
+  #gradient > .vertical(#f2f2f2, #ccc);  
+  margin-bottom: 0;
+  .border-radius-bottom(); 
+}
+
+/* search icon inside input */
+.navbar-search .search-query,
+.navbar-search .search-query:focus {
+  padding-left: 25px;
+}
+
+.search-query + .icon-search {
+  position: absolute;
+  left: 5px;
+  top: 7px;
+  background-image: url('../../images/glyphicons-halflings-white.png');
+}
+
+.search-query:focus + .icon-search {
+  background-image: url('../../images/glyphicons-halflings.png');
+}
+
+@media (max-width: 979px) {
+  .search-query + .icon-search {
+    left: 20px;
+    top: 16px;
+  }
+  .navbar-fixed-top {
+    margin-bottom: 0;
+  }
+}
+/* end for overwrites */
+
+.transcript {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 980px) {
+ body {
+   padding-top: 50px;
+ } 
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+ .navbar .container {
+   width: 724px; /* to match the rest of the containers */
+  } 
+}
+
+@media (max-width: 480px) {
+
+  body {
+    background: #f2f2f2;
+  }
+  
+  form legend {
+    text-indent: 0;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  
+  .form-horizontal input[type="password"],
+  .form-horizontal input[type="text"],
+  .form-horizontal textarea {
+    display: block;
+    width: 96%;
+    font-size: 22px;
+    height: 1.5em;
+  }
+  
+  form .form-actions {
+    text-align: center;
+  }
+  
+  form input.btn,
+  form input[type="button"], 
+  form input[type="reset"], 
+  form input[type="submit"] {
+    height: 5em;
+    width: 7em;
+    margin: auto 10px;
+  }
+  
+  h1 { 
+    font-size: 18px; 
+    margin: 0;
+  }
+}
