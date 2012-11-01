@@ -32,7 +32,7 @@
     </c:if> 
 
     <!-- <div class="box fl-panel" id="login"> -->
-		<form:form method="post" id="fm1" cssClass="fm-v clearfix" commandName="${commandName}" htmlEscape="true">
+		<form:form method="post" id="fm1" cssClass="form-horizontal" commandName="${commandName}" htmlEscape="true">
     <form:errors path="*" id="msg" cssClass="errors" element="div" />
       <fieldset>
         <legend>Enter your ONID username and password to login:</legend>

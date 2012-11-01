@@ -18,9 +18,9 @@
     under the License.
 
 --%>
-<jsp:directive.include file="includes/top.jsp" />
-		<div id="msg" class="errors">
+<jsp:directive.include file="includes/osu-top.jsp" />
+		<div class="alert alert-error">
 			<h2><spring:message code="screen.service.error.header" /></h2>
 			<p><spring:message code="screen.service.error.message" /></p>
 		</div>
-<jsp:directive.include file="includes/bottom.jsp" />
+<jsp:directive.include file="includes/osu-bottom.jsp" />
