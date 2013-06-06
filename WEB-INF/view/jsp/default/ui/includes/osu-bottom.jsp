@@ -25,7 +25,7 @@
   		 <p>Enterprise Computing Services<br />
   			 Oregon State University<br />
   			 Corvallis, OR 97331<br />
-  			 <a href="http://oregonstate.edu/helpdocs/helpdesk">Contact us with  your comments and questions</a><br />
+  			 <a href="http://oregonstate.edu/is/tss/och/helpdesk">Contact us with  your comments and questions</a><br />
   			 541-737-3474
   		 </p>
   		 <p><a href="http://oregonstate.edu/copyright">Copyright</a>&nbsp;&copy;&nbsp;2012<br />

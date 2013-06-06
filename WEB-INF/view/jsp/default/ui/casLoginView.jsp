@@ -36,8 +36,6 @@
     <form:errors path="*" id="msg" cssClass="errors" element="div" />
       <fieldset>
         <legend>Enter your ONID username and password to login:</legend>
-                  <!-- <spring:message code="screen.welcome.welcome" /> 
-                      <h2><spring:message code="screen.welcome.instructions" /></h2> -->
         <div class="control-group">
           <label for="username" class="control-label">ONID <spring:message code="screen.welcome.label.netid" /></label>
           <div class="controls">
