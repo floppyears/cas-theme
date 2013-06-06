@@ -27,6 +27,9 @@
 
 			<p><spring:message code="screen.logout.success" /></p>
 			<p><spring:message code="screen.logout.security" /></p>
+            <c:if test="${not empty param['url']}">
+                <p><spring:message code="screen.logout.redirect" arguments="${fn:escapeXml(param.url)}" /></p>
+            </c:if>
 		</div>
 	</div>
   <jsp:directive.include file="includes/osu-sidebar.jsp" />
