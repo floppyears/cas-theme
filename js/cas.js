@@ -65,8 +65,8 @@ $(document).ready(function(){
     //flash success box
     $('#msg.success').animate({ backgroundColor: 'rgb(51,204,0)' }, 30).animate({ backgroundColor: 'rgb(221,255,170)' }, 500);
     
-    if (!window.console || window.console == {}) {
-        window.console.log = function() {};
-    }
+    //make console available in case devtools are not on
+    if (!window.console) window.console = {};
+    if (window.console == {}) window.console.log = function() {};
 });
 
