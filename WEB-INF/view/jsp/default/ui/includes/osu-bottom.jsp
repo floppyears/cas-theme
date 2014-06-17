@@ -40,11 +40,11 @@
               <li><a href="http://onid.oregonstate.edu/chpw.shtml">Help, I forgot my password</a></li>
               <li><a href="http://oregonstate.edu/helpdocs/onid/signup">Create or activate ONID account</a></li>
               <li><a href="http://oregonstate.edu/helpdocs/onid">Need help logging in</a></li>
+              <li><a href="http://infosu.oregonstate.edu/login">Login for former employee/student</a></li>
             </ul>
     </div>
     <div class="span4">
       <a href="http://oregonstate.edu/registrar/transcripts"><img src="images/transcript.jpg" alt="Need a Transcript"></a>
-      <p>Former student? Need a transcript?</p>
     </div>
   </div> <!-- end row-fluid -->
 </div> <!-- end container div from osutop -->
