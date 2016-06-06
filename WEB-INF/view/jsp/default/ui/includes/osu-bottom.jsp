@@ -27,7 +27,7 @@
 			541-737-3474
 		</p>
 		<p><a href="http://oregonstate.edu/copyright">Copyright</a>&nbsp;&copy;&nbsp;2015<br />
-			Oregon state University<br />
+			Oregon State University<br />
 			<a href="http://oregonstate.edu/disclaimer">Disclaimer</a>
 		</p>      
 		<p>Powered by <a href="https://www.apereo.org/cas">Apereo Central Authentication Service <%=org.jasig.cas.CasVersion.getVersion()%></a></p>
