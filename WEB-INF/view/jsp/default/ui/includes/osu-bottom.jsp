@@ -20,32 +20,30 @@
 --%>
   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
   <div class="row-fluid">
-  	<div class="span4">              
-  		 <h3>Contact Info</h3>
-  		 <p>Enterprise Computing Services<br />
-  			 Oregon State University<br />
-  			 Corvallis, OR 97331<br />
-  			 <a href="http://oregonstate.edu/is/tss/och/helpdesk">Contact us with  your comments and questions</a><br />
-  			 541-737-3474
-  		 </p>
-  		 <p><a href="http://oregonstate.edu/copyright">Copyright</a>&nbsp;&copy;&nbsp;2012<br />
-  			 Oregon state University<br />
-  			 <a href="http://oregonstate.edu/disclaimer">Disclaimer</a>
-  		 </p>      
-  		 <p>Powered by <a href="http://www.jasig.org/cas">Jasig Central Authentication Service <%=org.jasig.cas.CasVersion.getVersion()%></a></p>
-  	</div>
-    <div class="span4">
-      <h3>Helpful Links</h3>
-            <ul id="help-links">
-              <li><a href="http://onid.oregonstate.edu/chpw.shtml">Help, I forgot my password</a></li>
-              <li><a href="http://oregonstate.edu/helpdocs/onid/signup">Create or activate ONID account</a></li>
-              <li><a href="http://oregonstate.edu/helpdocs/onid">Need help logging in</a></li>
-              <li><a href="http://infosu.oregonstate.edu/login">Login for former employee/student</a></li>
-            </ul>
-    </div>
-    <div class="span4">
-      <a href="http://oregonstate.edu/registrar/transcripts"><img src="images/transcript.jpg" alt="Need a Transcript"></a>
-    </div>
+	<div class="span4">              
+		<h3>Contact Info</h3>
+		<p>
+			<a href="http://oregonstate.edu/is/tss/och/helpdesk">Contact us with  your comments and questions</a><br />
+			541-737-3474
+		</p>
+		<p><a href="http://oregonstate.edu/copyright">Copyright</a>&nbsp;&copy;&nbsp;2015<br />
+			Oregon State University<br />
+			<a href="http://oregonstate.edu/disclaimer">Disclaimer</a>
+		</p>      
+		<p>Powered by <a href="https://www.apereo.org/cas">Apereo Central Authentication Service <%=org.jasig.cas.CasVersion.getVersion()%></a></p>
+	</div>
+	<div class="span4">
+		<h3>Helpful Links</h3>
+		<ul id="help-links">
+			<li><a href="http://onid.oregonstate.edu/chpw.shtml">Help, I forgot my password</a></li>
+			<li><a href="http://oregonstate.edu/helpdocs/onid/signup">Create or activate ONID account</a></li>
+			<li><a href="http://oregonstate.edu/helpdocs/onid">Need help logging in</a></li>
+			<li><a href="http://infosu.oregonstate.edu/login">Login for former employee/student</a></li>
+		</ul>
+	</div>
+	<div class="span4">
+		<a href="http://oregonstate.edu/registrar/transcripts"><img src="images/transcript.jpg" alt="Need a Transcript"></a>
+	</div>
   </div> <!-- end row-fluid -->
 </div> <!-- end container div from osutop -->
 

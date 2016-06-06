@@ -31,41 +31,35 @@
 <!--[if IE 8]> <html lang="en" class="ie ie8"> <![endif]-->
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
 	<head>
-	  <title>CAS &#8211; Central Authentication Service</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">    
-    <link rel="icon" href="<c:url value="/favicon.ico" />" type="image/x-icon" />
-    <link rel="stylesheet" media="screen" href="<c:url value="/css/less/osu-bootstrap.css" />" /> 
+		<title>CAS &#8211; Central Authentication Service</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">    
+		<link rel="icon" href="<c:url value="/favicon.ico" />" type="image/x-icon" />
+		<link rel="stylesheet" media="screen" href="<c:url value="/css/less/osu-bootstrap.css" />" /> 
 	</head>
 	<body id="cas"> <!-- might need to remove this ID -->
-    <div class="navbar navbar-fixed-top">
-  		<div class="navbar-inner">
-  			<div class="container">
-  				<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  				</a>
-  				<a href="http://oregonstate.edu/" class="brand">Oregon State University</a>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a href="http://oregonstate.edu/" class="brand">Oregon State University</a>
   				<div class="nav-collapse">
-          	<ul class="nav">
-  						<li class="no-border"><a href="http://calendar.oregonstate.edu/">Calendar</a></li>
-  						<li><a href="http://osulibrary.oregonstate.edu/">Library</a></li>
-  						<li><a href="http://oregonstate.edu/campusmap/">Maps</a></li>
-  						<li><a href="http://oregonstate.edu/main/online-services">Online Services</a></li>
-  					</ul>
-  					<form action="http://search.oregonstate.edu/" method="get" name="gs" class="navbar-search pull-right">
-  						<input type="text" name="q" id="q" placeholder="Search" class="search-query">
-  						<i class="icon-search"></i> 
-  						<input type="hidden" name="client" value="default_frontend" />
-  						<input type="hidden" name="site" value="All"/>
-  					</form>
-  				</div>
-  			</div>
-      </div>
+					<ul class="nav">
+						<li class="no-border"><a href="http://calendar.oregonstate.edu/">Calendar</a></li>
+						<li><a href="http://osulibrary.oregonstate.edu/">Library</a></li>
+						<li><a href="http://oregonstate.edu/campusmap/">Maps</a></li>
+						<li><a href="http://main.oregonstate.edu/">Online Services</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
   	</div>
 
   	<div class="container">
     	<div class="row-fluid">
-  			<h1> OSU Central Login</h1>
-      </div>
+		<h1>OSU Login</h1>
+	</div>
